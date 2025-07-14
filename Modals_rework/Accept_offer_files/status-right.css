@@ -1,0 +1,151 @@
+.right {
+    /* min-height: 700px; */
+    height: auto;
+    width: 67%;
+    padding: 25px 15px 15px 20px;
+    /*background-color: aquamarine;*/
+    border-top-right-radius: 15px;
+    white-space: nowrap;
+    /* z-index: 2; */  
+    /* 5 */
+
+}
+
+.right-dev-info-fixed-1-part1 {
+    /*background-color: lightgrey;*/
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    /*background-color: burlywood;*/
+
+}
+
+.right-fixied-name{
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.right-fixied-company {
+    color: #141B5F;
+    font-weight: 600;
+}
+
+.right-a-div {
+    height: 35px;
+    margin-top: 10px;
+    /*background-color: blueviolet;*/
+}
+
+.right-a {
+    text-decoration: solid;
+    text-transform: capitalize;
+    text-decoration-color: #8A96DE;
+    color: #8A96DE;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.right-dev-info-fixed-1-1 {
+    /*background-color: darkkhaki;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #d0d0d0;
+    background-color: white;
+}
+
+.a-aboutjob {
+    background-color: #141B5F;
+    color: #FFFFFF;
+    padding: 10px 15px ;
+    border-radius: 30px;
+    font-weight: 300;
+    /* position: absolute;
+    top: 10px;
+    left: 330px; */
+    font-family: 'Poppins', sans-serif;
+}
+
+.right-dev-info-fixed-1-part2 {
+    position: relative;
+    /*background-color: red;*/
+
+}
+
+
+/*fixed-box-2*/
+.application-div-text {
+    background-color: honeydew;
+    margin-top: 3px;
+
+}
+
+.application-status-p {
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 12px;
+    background-color: #ffff;
+}
+
+.right-dev-info-fixed-1 {
+    /*background-color: aquamarine;*/
+    height: 300px;
+    margin-top: 2px;
+
+}
+
+/*competed fixed box*/
+/*start recommation job info box*/
+
+
+
+.right-recommendation-div {
+    margin-top: 10px;
+    /*background-color: brown;*/
+    position: sticky;
+    top: 110px;
+    margin-bottom: 20PX;
+    border-bottom: 2px solid #999;
+    background-color: #FFFFFF;
+}
+
+
+
+.right-dev-info {
+    /*background-color: bisque;*/
+    /* min-height: 700px; */
+    height: auto;
+    margin-left: 15px;
+    z-index: 1;
+
+
+}
+
+.right-insert {
+    /*background-color: red;*/
+    /* min-height: 700px; */
+    height: auto;
+    /* background-color: #FFFFFF; */
+    border-top-right-radius: 15px;
+
+}
+
+.right-recommdation-info{
+    border-top: 1px solid #d0d0d0;
+    padding: 15px 10px 15px 0;
+    
+.right--div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+}
+
+.right-recommdation-text{
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+
+}

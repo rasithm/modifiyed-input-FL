@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://127.0.0.1:8000/status/offered/# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      
+Application Status
+
+    </title>
+
+    <link rel="stylesheet" href="./Accept_offer_files/nav.css">
+    <link rel="stylesheet" href="./Accept_offer_files/error.css">
+    <link rel="stylesheet" href="./Accept_offer_files/footer.css">
+    <link rel="stylesheet" href="./Accept_offer_files/notification.css">
+    <link rel="stylesheet" href="./Accept_offer_files/loading.css">    
+    <link rel="stylesheet" href="./Accept_offer_files/all.min.css">
+    <link rel="stylesheet" href="./Accept_offer_files/all(1).min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="./Accept_offer_files/loading.js.download" defer=""></script>    
+    <style>
+      *{
+          font-size: 16px;
+      }
+
+
+
+  </style>     
+    
+<link rel="stylesheet" href="./Accept_offer_files/status-box.css">
+<link rel="stylesheet" href="./Accept_offer_files/status-menu.css">
+<link rel="stylesheet" href="./Accept_offer_files/status-right.css">
+<link rel="stylesheet" href="./Accept_offer_files/jobs.css">
+<link rel="stylesheet" href="./Accept_offer_files/status-bar.css">
+
+<link rel="stylesheet" href="./Accept_offer_files/status-form.css">
+<link rel="stylesheet" href="./Accept_offer_files/model.css">
+
+    <script src="./Accept_offer_files/nav.js.download" defer=""></script>
+    <script src="./Accept_offer_files/notification.js.download" defer=""></script>
+    <script src="./Accept_offer_files/modal.js.download" defer=""></script>
+    
+  <style type="text/css" id="mytempCss">._8mqQwQ { display: none; } ._1TWLMK.icF5zO { opacity: 0.01; }</style></head>
+  <body style="margin-top: 0px !important;">
+    <header>
+      <div class="navbar">
+        <nav>
+          <ul class="menu">
+            <li class="logo">
+              <!-- change the name of logo according to your name of image (mani/vengu) -->
+              <a href="http://127.0.0.1:8000/"><img src="./Accept_offer_files/logo.svg" alt="Placenow Logo" style="height: 20px;"></a>
+            </li>
+            <div class="item ">
+              <li>
+                <a href="http://127.0.0.1:8000/"><i class="fa-solid fa-house"></i><div>Home</div></a>
+              </li>
+            </div>
+            <div class="item active">
+              <li>
+                <a href="http://127.0.0.1:8000/status/applied/"><i class="fa-solid fa-briefcase"></i><div>Jobs</div></a>
+              </li>
+            </div>
+            <div class="item">
+              <li><a id="notification"><i class="fa-solid fa-bell"><span class="badge">3</span></i><div>Notifications</div></a></li>
+          </div>
+            <li class="toggle" id="menu-toggle">
+              <span class="bars"></span>
+            </li>
+            
+              <li class="item button ">
+                <a href="http://127.0.0.1:8000/profile/"><i class="fa-solid fa-user" style="margin-right: 8px;"></i>Profile</a>
+              </li>
+              
+            
+            <li class="item"></li>
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+                <!--   js error handling, python error handling and loading field -->
+                    <div id="api-message"></div>
+                    <div id="loading-screen">
+                    <div class="loader-wrapper">
+                        <div class="loader"></div>
+                        <span class="loading-text">Loading, please wait...</span>
+                    </div>
+                    </div>
+                    <div id="alert-container">
+                    
+                    </div>
+
+                    <div class="modal" id="HtmxModal">
+
+</div>
+                <!--   error -->
+
+          
+    
+
+<div class="all-menu">
+    <ul class="menu-item">
+        <li class="save "><a href="http://127.0.0.1:8000/status/saved/" class="" onclick="showSection(&#39;saved&#39;)">Saved Jobs(5)</a></li>
+        <li class="applied "><a href="http://127.0.0.1:8000/status/applied/" class="" onclick="showSection(&#39;applied&#39;)">Applied Jobs(6)</a></li>
+        <li class="offer active"><a href="http://127.0.0.1:8000/status/offered/" class="active" onclick="showSection(&#39;offered&#39;)">My Offers(1)</a></li>
+    </ul>
+</div>
+        
+        
+
+<section class="dev-list" id="offered">
+  <div class="left">
+      <div class="buttons">
+    <a class="button active">My Offers</a>
+  </div>
+      
+        <a href="http://127.0.0.1:8000/status/offered/2">
+          <div class="dev-detail-2 active">
+            <div class="dev-detail-2-inside">
+              <h1 class="dev-name">test vv</h1>
+              <p class="company-name">MSI</p>
+              <div class="application">
+                
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                  <p class="application-saved">Offer Made — Your Action Required</p>
+                
+              </div>
+            </div>
+            <div class="dev-box2">
+              <div class="dev-box2-profile"></div>
+              
+            </div>
+          </div>
+        </a>
+      
+
+  </div>
+
+  <!-- -right side dev-info- -->
+  <div class="right">
+    
+    <div class="right-insert">
+      <div class="right-dev-info">
+        <div class="right-dev-info-fixed-1">
+          <!-- dev-name-company-and about-job -->
+          <div class="right-dev-info-fixed-1-1">
+            <div class="right-dev-info-fixed-1-part1">
+              <h1 class="right-fixied-name">test vv</h1>
+              <p class="right-fixied-company">MSI</p>
+
+              <div class="right-a-div">
+                <a href="http://127.0.0.1:8000/search/?q=test%20vv" class="right-a">View similar jobs</a>
+              </div>
+            </div>
+            <div class="right-dev-info-fixed-1-part2">
+              <div class="right-dev-info-about-job">
+                <a href="http://127.0.0.1:8000/job/?r=test-vv-msi-1b2cbf35" class="a-aboutjob">About job</a>
+              </div>
+            </div>
+          </div>
+
+          <!--  fixed-box-2 -->
+          <div class="right-dev-info-fixed-1-2">
+            <div class="application-div-text">
+              <p class="application-status-p">Application Status</p>
+            </div>
+          </div>
+
+          <!-- -pending status-bar -->
+          <div class="bar-set">
+            <div class="progress-track">
+              <ul id="progressbar">
+                <li class="active">
+                  Offered<p>31 May 2025</p>
+                </li>
+                
+                  <li class="">
+                    
+                      Acceptance await
+                    
+                  </li>
+                  <li class="">
+                    
+                      Onboarding await
+                    
+                  </li>
+                  <li class="">
+                    
+                      Joining Await
+                    
+                  </li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- completed fixed right box -->
+        <!-- recommendation box text -->
+        <div class="right-recommdation-info">
+          <div class="right--div">
+            <h1 class="right-recommdation-text">Action Required :</h1>
+                  
+                    <div class="button-group">
+                      <a href="http://127.0.0.1:8000/status/offered/#" class="open-modal-btn btn btn-accept" data-modal-id="AcceptModal">Accept offer</a>
+                      <a href="http://127.0.0.1:8000/status/offered/#" class="open-modal-btn btn btn-decline" data-modal-id="DeclineModal">Decline offer</a>
+                    </div>
+                    
+<!-- The Modal for ==========Accept Offer letter ===================== -->
+<div class="modal show" id="AcceptModal" style="display: block;">
+    <div class="modal-dialog">
+            <form method="post" action="http://127.0.0.1:8000/status/offered/#">
+                <input type="hidden" name="csrfmiddlewaretoken" value="DwP3zeyiZ4YsxIcsmsWGGez8YM7aNEGonzeD8KFJc5Vskkfuywoy3uq6cs9XMATI">
+        <div class="modal-content">
+    
+        <!-- Modal Header -->
+        <div class="modal-header">
+            <h3 class="modal-title">2Accept Your Offer1</h3>
+            <button type="button" class="btn-close close-modal-btn" id="closePersonalModalButton"><i class="fas fa-times edit"></i></button>
+        </div>
+    
+        <!-- Modal Body -->
+        <div class="modal-body">
+        <div class="margin20">
+        <div class="">
+
+            <table class="modal-table">
+                <input type="hidden" name="application_id" value="2">
+                <input type="hidden" name="offer_id" value="1">
+                <tbody><tr>
+                    <td>Your Message</td>
+                    <td>
+                        <textarea id="response" name="response" placeholder="Write your message here..."></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    <label>
+                        <input type="checkbox" name="acknowledgment">
+                            I have read and agree to the offer letter, and acknowledge the terms and conditions.
+                    </label>
+                    </td>
+                </tr>
+
+
+
+  
+            </tbody></table>
+
+        </div>
+        </div>
+        </div>
+    
+        <!-- Modal Footer -->
+        <div class="modal-footer">
+
+                    <button type="submit" name="accept" value="accept" class=" model-btn-save">Accept</button>
+
+        </div>
+    
+        </div>
+    </form>
+    </div>
+    </div>
+
+                    
+<!-- The Modal for ==========DeclineModal===================== -->
+<div class="modal" id="DeclineModal">
+    <div class="modal-dialog">
+            <form method="post" action="http://127.0.0.1:8000/status/offered/#">
+                <input type="hidden" name="csrfmiddlewaretoken" value="DwP3zeyiZ4YsxIcsmsWGGez8YM7aNEGonzeD8KFJc5Vskkfuywoy3uq6cs9XMATI">
+        <div class="modal-content">
+    
+        <!-- Modal Header -->
+        <div class="modal-header">
+            <h3 class="modal-title">Decline Your offer</h3>
+            <button type="button" class="btn-close close-modal-btn" id="closePersonalModalButton"><i class="fas fa-times edit"></i></button>
+        </div>
+    
+        <!-- Modal Body -->
+        <div class="modal-body">
+        <div class="margin20">
+        <div class="">
+
+            <table class="modal-table">
+                <input type="hidden" name="application_id" value="2">
+                <input type="hidden" name="offer_id" value="1">
+                <tbody><tr>
+                    <td>Your Message (Optional)</td>
+                    <td>
+                        <textarea id="response" name="response" placeholder="Write your message here..."></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    <label>
+                        <input type="checkbox" name="acknowledgment">
+                            I have read and agree to the offer letter, and acknowledge the terms and conditions.
+                    </label>
+                    </td>
+                </tr>
+
+
+  
+            </tbody></table>
+
+        </div>
+        </div>
+        </div>
+    
+        <!-- Modal Footer -->
+        <div class="modal-footer">
+                    <button type="submit" name="decline" value="decline" class="model-btn-save">Decline</button>
+        </div>
+    
+        </div>
+    </form>
+    </div>
+    </div>
+
+                  
+            
+          </div>
+          <!-- create recommendation box start -->
+          <div class="right-rec-box-scroll">
+            <!-- for onboarding -->
+            <div class="right-rec-box-width">
+              
+
+              <!-- for offer letter -->
+
+              <div class="offer-letter-container">
+                <div class="offer-letter-card">
+                  
+                    
+                    
+
+                    <div class="pdf-container">
+                      
+
+                      <iframe src="./Accept_offer_files/offer-letter-format_4.html" width="100%" height="300px" style="border: none; border-radius: 10px;" title="Offer Letter"></iframe>
+
+                      <!-- Floating action icons -->
+                      <div class="pdf-actions">
+                        <div class="offer-letter-actions">
+                          My Offer Letter
+                        </div>
+                        <div class="offer-letter-actions">
+                          <a href="http://127.0.0.1:8000/status/offered/#" class="open-modal-btn icon-btn" title="View" data-modal-id="OfferLetterModal"><i class="fa-solid fa-eye"></i></a>
+                          <a href="http://127.0.0.1:8000/media/CompaniesDF/100/000/001/offer_letters/offer-letter-format_4.pdf" download="" class="icon-btn" title="Download"><i class="fa-solid fa-download"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  
+
+
+                  
+<!-- The Modal for ==========Accept Offer letter ===================== -->
+<div class="modal" id="OfferLetterModal">
+    <div class="modal-dialog" style="width: 70%;">
+            <form method="post" action="http://127.0.0.1:8000/status/offered/#">
+                <input type="hidden" name="csrfmiddlewaretoken" value="DwP3zeyiZ4YsxIcsmsWGGez8YM7aNEGonzeD8KFJc5Vskkfuywoy3uq6cs9XMATI">
+        <div class="modal-content">
+    
+        <!-- Modal Header -->
+        <div class="modal-header">
+            <h3 class="modal-title">View Your Offer letter</h3>
+            <div>
+                                        
+                        <button type="button" class="btn-close close-modal-btn" id="closePersonalModalButton"><i class="fas fa-times edit"></i></button>
+            </div>
+        </div>
+    
+        <!-- Modal Body -->
+        <div class="modal-body">
+        <div class="margin20">
+        <div class="" style="width: 100%; height: 450px; overflow: hidden; border-radius: 10px;">
+
+    <iframe src="./Accept_offer_files/offer-letter-format_4(1).html" style="width: 100%; height: 100%; border: none;" title="Offer Letter">
+    </iframe>
+
+
+        </div>
+        </div>
+        </div>
+    
+        <!-- Modal Footer -->
+        <div class="modal-footer">
+                        <a href="http://127.0.0.1:8000/media/CompaniesDF/100/000/001/offer_letters/offer-letter-format_4.pdf" download="" class="model-btn-save" title="Download">
+                            <i class="fa-solid fa-download"></i> Download
+                        </a>
+
+
+        </div>
+    
+        </div>
+    </form>
+    </div>
+    </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+</section>
+                                                          
+        
+
+
+
+
+
+
+
+
+
+                <footer class="about">
+                    <div class="about-main">
+                        <div class="company">
+                           <div class="content">
+                                <div class="company-text">
+                                    <p>Company</p>
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="company-text-1">  
+                                    <a>
+                                        About Us
+                                    </a>
+                                    <a>Terms &amp; condition</a>
+                                    <a>Privacy Policy</a>
+                                    <a>Affiliate program</a>
+
+                                </div>
+                           </div> 
+                        </div>
+                        <div class="help">
+                            <div class="content">
+                                <div class="company-text">
+                                    <p>Get Help</p>
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="company-text-1">  
+                                    <a>
+                                        FAQ
+                                    </a>
+                                    <a>Terms &amp; condition</a>
+                                    <a>Report</a>
+
+                                </div>
+                           </div>
+                        </div>
+                        <div class="shop">
+                            <div class="content">
+                                <div class="company-text">
+                                    <p>Our service</p>
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="company-text-1">  
+                                    <a>Job seeking
+                                    </a>
+                                    <a>Smart Searching</a>
+                                    <a>Hiring Process</a>
+                                    <a>Employee payroll</a>
+
+                                </div>
+                           </div>
+                        </div>
+                        <div class="follow">
+                            <div class="content">
+                                <div class="company-text-last">
+                                    <p>Follow us</p>
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="company-text-1-last">  
+                                    <a>
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a><i class="fa-brands fa-instagram"></i></a>
+                                    <a><i class="fa-brands fa-linkedin-in"></i></a>
+
+                                </div>
+                           </div>
+                            
+                        </div>
+
+                    </div>
+                    <div class="last-para">
+                        <p>© 2025 Placenow Private Limited. All right reserved </p>
+                    </div>
+                </footer>
+
+
+    <!--Notification-->
+
+
+    <div class="scroll-bg" id="scroll-bg">
+      <div class="scroll-div">
+
+
+          <!--box 2-->
+          <a href="http://127.0.0.1:8000/profile/" class="scroll-object">
+              <div class="name">
+                  <h2>Complete Profile</h2>
+                  <p>To improve your profile performance</p>
+              </div>
+              <div class="new">
+                  <p>Update</p>
+              </div>
+            </a>
+          <!--box 3-->
+          <a class="scroll-object">
+              <div class="name">
+                  <h2>Onbarding Await</h2>
+                  <p>Complete the onboarding process for ABC Company by Today</p>
+              </div>
+              <div class="new">
+                  <p>Onboarding</p>
+              </div>
+            </a>
+
+
+
+          
+
+
+
+      </div>
+  </div>
+
+    <script src="./Accept_offer_files/script.js.download" defer=""></script>
+    <script src="./Accept_offer_files/error.js.download" defer=""></script>
+  
+
+<div id="bh-crx-root" style="display: block !important;"><template shadowrootmode="closed"><style>
+  @font-face {
+    font-family: 'Metropolis';
+    src: url(chrome-extension://ojplmecpdpgccookcobabopnaifgidhf/src/ui/assets/fonts/metropolis-latin-400-normal.woff2) format('woff2');
+	src: url(chrome-extension://ojplmecpdpgccookcobabopnaifgidhf/src/ui/assets/fonts/metropolis-latin-400-normal.woff) format('woff');
+    font-weight: 400;
+	font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Metropolis';
+    src: url(chrome-extension://ojplmecpdpgccookcobabopnaifgidhf/src/ui/assets/fonts/metropolis-latin-500-normal.woff2) format('woff2');
+	src: url(chrome-extension://ojplmecpdpgccookcobabopnaifgidhf/src/ui/assets/fonts/metropolis-latin-500-normal.woff) format('woff');
+    font-weight: 500;
+	font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Metropolis';
+    src: url(chrome-extension://ojplmecpdpgccookcobabopnaifgidhf/src/ui/assets/fonts/metropolis-latin-600-normal.woff2) format('woff2');
+	src: url(chrome-extension://ojplmecpdpgccookcobabopnaifgidhf/src/ui/assets/fonts/metropolis-latin-600-normal.woff) format('woff');
+    font-weight: 600;
+	font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Metropolis';
+    src: url(chrome-extension://ojplmecpdpgccookcobabopnaifgidhf/src/ui/assets/fonts/metropolis-latin-700-normal.woff2) format('woff2');
+	src: url(chrome-extension://ojplmecpdpgccookcobabopnaifgidhf/src/ui/assets/fonts/metropolis-latin-700-normal.woff) format('woff');
+    font-weight: 700;
+	font-display: swap;
+    font-style: normal;
+  }
+	</style><!----><main class="font-sans"><style>.something-counter{font-size:33px;background:red;border:2px solid black;padding:10px}.temp{background:red;border:2px solid black;padding:16px;font-size:40px}.overlay-container{height:auto;position:fixed;top:50%;right:0;transform:translateY(-50%)}.slider-wrapper{padding:6px;display:flex;height:45px;align-items:center;position:relative;gap:15px;justify-content:space-between;background:#178abb;border-radius:5px 0 0 5px;left:145px;transition:left .3s ease-in-out;cursor:pointer}.slider-arrow:hover{opacity:1}.slider-arrow{border:solid white;border-width:2px 0 0 2px;padding:3px;transform:rotate(-45deg);margin-left:10px}.slider-text{font-size:12px;color:#fff;font-weight:500}.slider-wrapper:hover{left:0}.content-wrapper{display:flex;flex-direction:column;align-items:center;justify-content:center;background:#178abb}.overlay-items-wrapper{position:relative;display:flex;flex-wrap:wrap;align-items:center;justify-content:center}.items-container{width:100%}.tooltip-arrow1{position:absolute;left:-15px;top:50%;border-left:8.5px solid transparent;border-right:8.5px solid transparent;border-bottom:15px solid #ccc;transform:rotate(90deg)}.tooltip-arrow2{position:absolute;left:-15px;top:50%;border-left:7.5px solid transparent;border-right:7.5px solid transparent;border-bottom:15px solid #fff;z-index:999999;transform:rotate(90deg)}.item{padding:8px;display:flex;color:#fff;font-size:11px;font-weight:600;justify-content:center;align-items:center;text-align:center;word-wrap:break-word;width:100%;opacity:.7;cursor:pointer}.selected-item{opacity:1;background:#0003}.item:hover{background:#0006}.cross{width:30px;height:25px;bottom:0;color:#fff;font-weight:700;display:flex;position:relative;left:90px;background:#178abb;align-items:center;justify-content:center;border-radius:6px 0 0;cursor:pointer}.cross:hovered{transition:left .3s ease-in;left:40px}.overlay-popup{position:absolute;right:110%;background-color:#fff;border:1px solid #ccc;border-radius:5px;padding:20px;box-shadow:0 0 10px #0003;z-index:9999}.overlay-popup-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}.overlay-popup-close-btn{background:none;border:none;cursor:pointer;font-size:18px;color:#999}.overlay-popup-close-btn:hover{color:#666}.overlay-popup-description,.overlay-popup-footer{display:flex;align-items:center;justify-content:center}.button{font-size:14px;padding:10px 15px;cursor:pointer;border-radius:8px;color:#fff}.primary{background-color:#007bff}.secondary{background-color:orange}.popup-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:#00000080;display:flex;justify-content:center;align-items:center;z-index:999}.popup-container{background:#fff;border-radius:8px;max-width:400px;width:100%;padding:20px;position:relative}.popup-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}.popup-header button{background:none;border:none;cursor:pointer;font-size:20px;color:#999}.popup-content{margin-bottom:15px}.tabs{display:flex;cursor:pointer}.tab{padding:10px;margin-right:10px;background-color:#eee;border-radius:5px;-webkit-user-select:none;-moz-user-select:none;user-select:none;border:2px solid black}.tab.selected{background-color:#ddd}.content{margin-top:10px}:host{all:initial;font-family:Metropolis,system-ui,Avenir,Helvetica,Arial,sans-serif}*,:before,:after{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }*,:before,:after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}:before,:after{--tw-content: ""}html,:host{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:Metropolis,system-ui,Avenir,Helvetica,Arial,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dl,dd,h1,h2,h3,h4,h5,h6,hr,figure,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}ol,ul,menu{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}button,[role=button]{cursor:pointer}:disabled{cursor:default}img,svg,video,canvas,audio,iframe,embed,object{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.\!container{width:100%!important}.container{width:100%}@media (min-width: 640px){.\!container{max-width:640px!important}.container{max-width:640px}}@media (min-width: 768px){.\!container{max-width:768px!important}.container{max-width:768px}}@media (min-width: 1024px){.\!container{max-width:1024px!important}.container{max-width:1024px}}@media (min-width: 1280px){.\!container{max-width:1280px!important}.container{max-width:1280px}}@media (min-width: 1536px){.\!container{max-width:1536px!important}.container{max-width:1536px}}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.pointer-events-none{pointer-events:none}.visible{visibility:visible}.static{position:static}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{top:0;right:0;bottom:0;left:0}.-bottom-1{bottom:-4px}.-bottom-3{bottom:-12px}.-bottom-4{bottom:-16px}.-left-1{left:-4px}.-left-3{left:-12px}.-right-1{right:-4px}.-right-2{right:-8px}.-right-3{right:-12px}.-top-1{top:-4px}.-top-2{top:-8px}.-top-3{top:-12px}.bottom-0{bottom:0}.bottom-3{bottom:12px}.left-0{left:0}.left-1{left:4px}.left-1\/2{left:50%}.left-10{left:40px}.left-12{left:48px}.left-2{left:8px}.left-\[-100\%\]{left:-100%}.left-\[100\%\]{left:100%}.right-0{right:0}.right-10{right:40px}.right-12{right:48px}.right-2{right:8px}.right-\[-4px\]{right:-4px}.right-\[-50\%\]{right:-50%}.right-\[100\%\]{right:100%}.top-0{top:0}.top-1{top:4px}.top-1\/2{top:50%}.top-10{top:40px}.top-14{top:56px}.top-2{top:8px}.top-4{top:16px}.top-\[50px\]{top:50px}.isolate{isolation:isolate}.-z-10{z-index:-10}.z-0{z-index:0}.z-10{z-index:10}.z-20{z-index:20}.z-40{z-index:40}.z-50{z-index:50}.z-\[100000\]{z-index:100000}.z-\[1\]{z-index:1}.z-\[999999\]{z-index:999999}.z-\[9999\]{z-index:9999}.col-span-full{grid-column:1 / -1}.m-1{margin:4px}.m-2{margin:8px}.m-4{margin:16px}.-my-2{margin-top:-8px;margin-bottom:-8px}.mx-2{margin-left:8px;margin-right:8px}.mx-4{margin-left:16px;margin-right:16px}.mx-auto{margin-left:auto;margin-right:auto}.my-1{margin-top:4px;margin-bottom:4px}.my-3{margin-top:12px;margin-bottom:12px}.my-4{margin-top:16px;margin-bottom:16px}.my-6{margin-top:24px;margin-bottom:24px}.my-auto{margin-top:auto;margin-bottom:auto}.-mr-1{margin-right:-4px}.-mt-2{margin-top:-8px}.mb-1{margin-bottom:4px}.mb-2{margin-bottom:8px}.mb-4{margin-bottom:16px}.ml-1{margin-left:4px}.ml-2{margin-left:8px}.mr-1{margin-right:4px}.mt-1{margin-top:4px}.mt-14{margin-top:56px}.mt-2{margin-top:8px}.mt-3{margin-top:12px}.mt-4{margin-top:16px}.mt-6{margin-top:24px}.mt-\[7vh\]{margin-top:7vh}.mt-auto{margin-top:auto}.line-clamp-1{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1}.line-clamp-2{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}.line-clamp-3{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3}.line-clamp-4{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4}.line-clamp-5{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:5}.line-clamp-6{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:6}.block{display:block}.inline-block{display:inline-block}.inline{display:inline}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.contents{display:contents}.hidden{display:none}.aspect-square{aspect-ratio:1 / 1}.size-2{width:8px;height:8px}.h-1{height:4px}.h-10{height:40px}.h-12{height:48px}.h-16{height:64px}.h-2{height:8px}.h-20{height:80px}.h-24{height:96px}.h-3{height:12px}.h-32{height:128px}.h-4{height:16px}.h-40{height:160px}.h-44{height:176px}.h-5{height:20px}.h-6{height:24px}.h-8{height:32px}.h-\[100vh\]{height:100vh}.h-\[104px\]{height:104px}.h-\[13px\]{height:13px}.h-\[160px\]{height:160px}.h-\[194px\]{height:194px}.h-\[200px\]{height:200px}.h-\[264px\]{height:264px}.h-\[320px\]{height:320px}.h-\[46px\]{height:46px}.h-\[476px\]{height:476px}.h-\[556px\]{height:556px}.h-\[576px\]{height:576px}.h-\[90vh\]{height:90vh}.h-auto{height:auto}.h-fit{height:-moz-fit-content;height:fit-content}.h-full{height:100%}.h-px{height:1px}.h-screen{height:100vh}.max-h-12{max-height:48px}.max-h-5{max-height:20px}.max-h-6{max-height:24px}.max-h-\[133px\]{max-height:133px}.max-h-\[660px\]{max-height:660px}.max-h-\[746px\]{max-height:746px}.max-h-\[90svh\]{max-height:90svh}.max-h-\[98dvh\]{max-height:98dvh}.max-h-screen{max-height:100vh}.w-1\/2{width:50%}.w-10{width:40px}.w-12{width:48px}.w-14{width:56px}.w-16{width:64px}.w-2{width:8px}.w-20{width:80px}.w-24{width:96px}.w-28{width:112px}.w-3{width:12px}.w-3\/4{width:75%}.w-32{width:128px}.w-4{width:16px}.w-40{width:160px}.w-5{width:20px}.w-6{width:24px}.w-8{width:32px}.w-\[104px\]{width:104px}.w-\[10px\]{width:10px}.w-\[18px\]{width:18px}.w-\[200px\]{width:200px}.w-\[272px\]{width:272px}.w-\[360px\]{width:360px}.w-\[38\%\]{width:38%}.w-\[43\%\]{width:43%}.w-\[482px\]{width:482px}.w-\[490px\]{width:490px}.w-\[720px\]{width:720px}.w-\[72px\]{width:72px}.w-auto{width:auto}.w-full{width:100%}.w-screen{width:100vw}.min-w-0{min-width:0px}.min-w-32{min-width:128px}.min-w-\[194px\]{min-width:194px}.max-w-5{max-width:20px}.max-w-6{max-width:24px}.max-w-\[133px\]{max-width:133px}.max-w-\[468px\]{max-width:468px}.max-w-\[98vw\]{max-width:98vw}.max-w-lg{max-width:32rem}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.flex-shrink{flex-shrink:1}.flex-shrink-0,.shrink-0{flex-shrink:0}.flex-grow{flex-grow:1}.border-collapse{border-collapse:collapse}.border-spacing-2{--tw-border-spacing-x: 8px;--tw-border-spacing-y: 8px;border-spacing:var(--tw-border-spacing-x) var(--tw-border-spacing-y)}.-translate-x-1\/2{--tw-translate-x: -50%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-translate-y-1\/2{--tw-translate-y: -50%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-rotate-90{--tw-rotate: -90deg;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-180{--tw-rotate: 180deg;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-45{--tw-rotate: 45deg;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-90{--tw-rotate: 90deg;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-x-\[-1\]{--tw-scale-x: -1;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite}@keyframes spin{to{transform:rotate(360deg)}}.animate-spin{animation:spin 1s linear infinite}.cursor-auto{cursor:auto}.cursor-default{cursor:default}.cursor-ew-resize{cursor:ew-resize}.cursor-grab{cursor:grab}.cursor-move{cursor:move}.cursor-ns-resize{cursor:ns-resize}.cursor-pointer{cursor:pointer}.cursor-text{cursor:text}.touch-none{touch-action:none}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.resize{resize:both}.snap-x{scroll-snap-type:x var(--tw-scroll-snap-strictness)}.snap-center{scroll-snap-align:center}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-cols-\[1fr_auto\]{grid-template-columns:1fr auto}.grid-cols-\[auto_1fr\]{grid-template-columns:auto 1fr}.grid-rows-\[auto\,1fr\,auto\]{grid-template-rows:auto 1fr auto}.flex-row{flex-direction:row}.flex-row-reverse{flex-direction:row-reverse}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.content-center{align-content:center}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-start{justify-content:flex-start}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-0\.5{gap:2px}.gap-1{gap:4px}.gap-1\.5{gap:6px}.gap-10{gap:40px}.gap-2{gap:8px}.gap-3{gap:12px}.gap-4{gap:16px}.gap-6{gap:24px}.gap-7{gap:28px}.gap-x-2{-moz-column-gap:8px;column-gap:8px}.gap-x-4{-moz-column-gap:16px;column-gap:16px}.gap-y-1{row-gap:4px}.space-y-1>:not([hidden])~:not([hidden]){--tw-space-y-reverse: 0;margin-top:calc(4px * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(4px * var(--tw-space-y-reverse))}.overflow-auto{overflow:auto}.overflow-hidden{overflow:hidden}.overflow-visible{overflow:visible}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.text-ellipsis{text-overflow:ellipsis}.whitespace-normal{white-space:normal}.whitespace-nowrap{white-space:nowrap}.text-wrap{text-wrap:wrap}.text-pretty{text-wrap:pretty}.break-words{overflow-wrap:break-word}.rounded{border-radius:4px}.rounded-2xl{border-radius:16px}.rounded-3xl{border-radius:24px}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:8px}.rounded-md{border-radius:6px}.rounded-xl{border-radius:12px}.rounded-b-lg{border-bottom-right-radius:8px;border-bottom-left-radius:8px}.rounded-l-full{border-top-left-radius:9999px;border-bottom-left-radius:9999px}.rounded-l-lg{border-top-left-radius:8px;border-bottom-left-radius:8px}.rounded-r-sm{border-top-right-radius:2px;border-bottom-right-radius:2px}.rounded-t{border-top-left-radius:4px;border-top-right-radius:4px}.rounded-t-none{border-top-left-radius:0;border-top-right-radius:0}.rounded-t-xl{border-top-left-radius:12px;border-top-right-radius:12px}.rounded-bl-lg{border-bottom-left-radius:8px}.rounded-br-lg{border-bottom-right-radius:8px}.rounded-tl-lg{border-top-left-radius:8px}.rounded-tr-lg{border-top-right-radius:8px}.border{border-width:1px}.border-2{border-width:2px}.border-\[0\.5px\]{border-width:.5px}.border-b{border-bottom-width:1px}.border-b-4{border-bottom-width:4px}.border-l{border-left-width:1px}.border-l-\[6px\]{border-left-width:6px}.border-r{border-right-width:1px}.border-t{border-top-width:1px}.border-t-4{border-top-width:4px}.border-dotted{border-style:dotted}.border-none{border-style:none}.border-blue-100{--tw-border-opacity: 1;border-color:rgb(219 234 254 / var(--tw-border-opacity, 1))}.border-gray-100{--tw-border-opacity: 1;border-color:rgb(243 244 246 / var(--tw-border-opacity, 1))}.border-gray-200{--tw-border-opacity: 1;border-color:rgb(229 231 235 / var(--tw-border-opacity, 1))}.border-gray-300{--tw-border-opacity: 1;border-color:rgb(209 213 219 / var(--tw-border-opacity, 1))}.border-indigo-100{--tw-border-opacity: 1;border-color:rgb(224 231 255 / var(--tw-border-opacity, 1))}.border-indigo-300{--tw-border-opacity: 1;border-color:rgb(165 180 252 / var(--tw-border-opacity, 1))}.border-indigo-600{--tw-border-opacity: 1;border-color:rgb(79 70 229 / var(--tw-border-opacity, 1))}.border-orange-500{--tw-border-opacity: 1;border-color:rgb(249 115 22 / var(--tw-border-opacity, 1))}.border-red-500{--tw-border-opacity: 1;border-color:rgb(239 68 68 / var(--tw-border-opacity, 1))}.border-slate-100{--tw-border-opacity: 1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity: 1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-300{--tw-border-opacity: 1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}.border-slate-600{--tw-border-opacity: 1;border-color:rgb(71 85 105 / var(--tw-border-opacity, 1))}.border-yellow-300{--tw-border-opacity: 1;border-color:rgb(253 224 71 / var(--tw-border-opacity, 1))}.border-yellow-400{--tw-border-opacity: 1;border-color:rgb(250 204 21 / var(--tw-border-opacity, 1))}.border-yellow-500{--tw-border-opacity: 1;border-color:rgb(234 179 8 / var(--tw-border-opacity, 1))}.bg-\[\#1c1740\]{--tw-bg-opacity: 1;background-color:rgb(28 23 64 / var(--tw-bg-opacity, 1))}.bg-\[\#1e1e1e\]{--tw-bg-opacity: 1;background-color:rgb(30 30 30 / var(--tw-bg-opacity, 1))}.bg-\[var\(--color\)\]{background-color:var(--color)}.bg-black{--tw-bg-opacity: 1;background-color:rgb(0 0 0 / var(--tw-bg-opacity, 1))}.bg-black\/50{background-color:#00000080}.bg-gray-200{--tw-bg-opacity: 1;background-color:rgb(229 231 235 / var(--tw-bg-opacity, 1))}.bg-gray-300{--tw-bg-opacity: 1;background-color:rgb(209 213 219 / var(--tw-bg-opacity, 1))}.bg-gray-950{--tw-bg-opacity: 1;background-color:rgb(3 7 18 / var(--tw-bg-opacity, 1))}.bg-green-50{--tw-bg-opacity: 1;background-color:rgb(240 253 244 / var(--tw-bg-opacity, 1))}.bg-green-500{--tw-bg-opacity: 1;background-color:rgb(34 197 94 / var(--tw-bg-opacity, 1))}.bg-indigo-50{--tw-bg-opacity: 1;background-color:rgb(238 242 255 / var(--tw-bg-opacity, 1))}.bg-indigo-600{--tw-bg-opacity: 1;background-color:rgb(79 70 229 / var(--tw-bg-opacity, 1))}.bg-indigo-900{--tw-bg-opacity: 1;background-color:rgb(49 46 129 / var(--tw-bg-opacity, 1))}.bg-indigo-950{--tw-bg-opacity: 1;background-color:rgb(30 27 75 / var(--tw-bg-opacity, 1))}.bg-orange-50{--tw-bg-opacity: 1;background-color:rgb(255 247 237 / var(--tw-bg-opacity, 1))}.bg-orange-500{--tw-bg-opacity: 1;background-color:rgb(249 115 22 / var(--tw-bg-opacity, 1))}.bg-red-200{--tw-bg-opacity: 1;background-color:rgb(254 202 202 / var(--tw-bg-opacity, 1))}.bg-red-50{--tw-bg-opacity: 1;background-color:rgb(254 242 242 / var(--tw-bg-opacity, 1))}.bg-red-500{--tw-bg-opacity: 1;background-color:rgb(239 68 68 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity: 1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-200{--tw-bg-opacity: 1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity: 1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity: 1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-yellow-100{--tw-bg-opacity: 1;background-color:rgb(254 249 195 / var(--tw-bg-opacity, 1))}.bg-yellow-400{--tw-bg-opacity: 1;background-color:rgb(250 204 21 / var(--tw-bg-opacity, 1))}.bg-yellow-50{--tw-bg-opacity: 1;background-color:rgb(254 252 232 / var(--tw-bg-opacity, 1))}.bg-opacity-70{--tw-bg-opacity: .7}.bg-cover{background-size:cover}.bg-center{background-position:center}.bg-no-repeat{background-repeat:no-repeat}.fill-\[context-stroke\]{fill:context-stroke}.fill-black\/50{fill:#00000080}.fill-none{fill:none}.fill-transparent{fill:transparent}.stroke-\[context-stroke\]{stroke:context-stroke}.stroke-none{stroke:none}.stroke-transparent{stroke:transparent}.stroke-white{stroke:#fff}.stroke-2{stroke-width:2}.object-contain{-o-object-fit:contain;object-fit:contain}.object-fill{-o-object-fit:fill;object-fit:fill}.p-0{padding:0}.p-0\.5{padding:2px}.p-1{padding:4px}.p-2{padding:8px}.p-3{padding:12px}.p-4{padding:16px}.p-8{padding:32px}.px-0{padding-left:0;padding-right:0}.px-1{padding-left:4px;padding-right:4px}.px-1\.5{padding-left:6px;padding-right:6px}.px-10{padding-left:40px;padding-right:40px}.px-2{padding-left:8px;padding-right:8px}.px-3{padding-left:12px;padding-right:12px}.px-4{padding-left:16px;padding-right:16px}.px-5{padding-left:20px;padding-right:20px}.px-6{padding-left:24px;padding-right:24px}.px-\[10px\]{padding-left:10px;padding-right:10px}.py-0\.5{padding-top:2px;padding-bottom:2px}.py-1{padding-top:4px;padding-bottom:4px}.py-2{padding-top:8px;padding-bottom:8px}.py-3{padding-top:12px;padding-bottom:12px}.py-4{padding-top:16px;padding-bottom:16px}.py-\[2\]{padding-top:2;padding-bottom:2}.pb-1{padding-bottom:4px}.pb-2{padding-bottom:8px}.pb-4{padding-bottom:16px}.pl-1{padding-left:4px}.pl-10{padding-left:40px}.pl-7{padding-left:28px}.pr-2{padding-right:8px}.pr-4{padding-right:16px}.pt-0{padding-top:0}.pt-1{padding-top:4px}.pt-2{padding-top:8px}.pt-3{padding-top:12px}.pt-4{padding-top:16px}.pt-5{padding-top:20px}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.text-start{text-align:start}.font-sans{font-family:Metropolis,system-ui,Avenir,Helvetica,Arial,sans-serif}.text-2xl{font-size:24px;line-height:32px}.text-\[10px\]{font-size:10px}.text-\[14px\]{font-size:14px}.text-\[8px\]{font-size:8px}.text-base{font-size:16px;line-height:24px}.text-lg{font-size:18px;line-height:28px}.text-sm{font-size:14px;line-height:20px}.text-xl{font-size:20px;line-height:28px}.text-xs{font-size:12px;line-height:16px}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-light{font-weight:300}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.lowercase{text-transform:lowercase}.capitalize{text-transform:capitalize}.ordinal{--tw-ordinal: ordinal;font-variant-numeric:var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction)}.tabular-nums{--tw-numeric-spacing: tabular-nums;font-variant-numeric:var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction)}.leading-3{line-height:12px}.leading-6,.leading-\[24px\]{line-height:24px}.leading-none{line-height:1}.text-\[\#0A0A0A\]{--tw-text-opacity: 1;color:rgb(10 10 10 / var(--tw-text-opacity, 1))}.text-\[\#151515B2\]{color:#151515b2}.text-\[\#5A5A5A\]{--tw-text-opacity: 1;color:rgb(90 90 90 / var(--tw-text-opacity, 1))}.text-emerald-500{--tw-text-opacity: 1;color:rgb(16 185 129 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity: 1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity: 1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-800{--tw-text-opacity: 1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-gray-900{--tw-text-opacity: 1;color:rgb(17 24 39 / var(--tw-text-opacity, 1))}.text-green-500{--tw-text-opacity: 1;color:rgb(34 197 94 / var(--tw-text-opacity, 1))}.text-green-600{--tw-text-opacity: 1;color:rgb(22 163 74 / var(--tw-text-opacity, 1))}.text-indigo-200{--tw-text-opacity: 1;color:rgb(199 210 254 / var(--tw-text-opacity, 1))}.text-indigo-600{--tw-text-opacity: 1;color:rgb(79 70 229 / var(--tw-text-opacity, 1))}.text-indigo-950{--tw-text-opacity: 1;color:rgb(30 27 75 / var(--tw-text-opacity, 1))}.text-orange-500{--tw-text-opacity: 1;color:rgb(249 115 22 / var(--tw-text-opacity, 1))}.text-red-500{--tw-text-opacity: 1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity: 1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity: 1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity: 1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity: 1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity: 1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-slate-950{--tw-text-opacity: 1;color:rgb(2 6 23 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-white\/70{color:#ffffffb3}.text-yellow-500{--tw-text-opacity: 1;color:rgb(234 179 8 / var(--tw-text-opacity, 1))}.underline{text-decoration-line:underline}.line-through{text-decoration-line:line-through}.decoration-dotted{text-decoration-style:dotted}.opacity-0{opacity:0}.opacity-10{opacity:.1}.opacity-50{opacity:.5}.opacity-60{opacity:.6}.opacity-70{opacity:.7}.shadow{--tw-shadow: 0 1px 3px 0 rgb(0 0 0 / .1), 0 1px 2px -1px rgb(0 0 0 / .1);--tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}.shadow-lg{--tw-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);--tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}.shadow-md{--tw-shadow: 0 4px 6px -1px rgb(0 0 0 / .1), 0 2px 4px -2px rgb(0 0 0 / .1);--tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}.shadow-sm{--tw-shadow: 0 1px 2px 0 rgb(0 0 0 / .05);--tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}.shadow-xl{--tw-shadow: 0 20px 25px -5px rgb(0 0 0 / .1), 0 8px 10px -6px rgb(0 0 0 / .1);--tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}.shadow-\[\#1A4CFB3D\]{--tw-shadow-color: #1A4CFB3D;--tw-shadow: var(--tw-shadow-colored)}.outline-none{outline:2px solid transparent;outline-offset:2px}.\!outline{outline-style:solid!important}.outline{outline-style:solid}.ring-0{--tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow, 0 0 #0000)}.drop-shadow{--tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / .1)) drop-shadow(0 1px 1px rgb(0 0 0 / .06));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.invert{--tw-invert: invert(100%);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur{--tw-backdrop-blur: blur(8px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-\[2px\]{--tw-backdrop-blur: blur(2px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-md{--tw-backdrop-blur: blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur: blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-filter{-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-300{transition-duration:.3s}.ease-in{transition-timing-function:cubic-bezier(.4,0,1,1)}.ease-out{transition-timing-function:cubic-bezier(0,0,.2,1)}.\[image-rendering\:pixelated\]{image-rendering:pixelated}.\[paint-order\:stroke\]{paint-order:stroke}.\[stroke-dasharray\:2\,2\]{stroke-dasharray:2,2}.\[stroke-linecap\:round\]{stroke-linecap:round}.\[stroke-linejoin\:round\]{stroke-linejoin:round}.\[stroke-width\:2px\]{stroke-width:2px}:root{font-family:Metropolis,system-ui,Avenir,Helvetica,Arial,sans-serif;line-height:1.5;font-weight:400;color-scheme:light dark;color:#ffffffde;background-color:#242424;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{margin:0;display:flex}h1{font-size:3.2em;line-height:1.1}.card{padding:2em}#app{max-width:1280px;max-height:576px;margin:0;background-color:#fff}.something{font-size:33px;background:#9acd32;border:2px solid black;padding:10px}#chart-container{width:100%;height:400px!important;border-radius:16px;z-index:0;clip-path:none}clipPath rect{width:100%!important}.highcharts-series-group .highcharts-markers{clip-path:none!important}.image-card-skeleton{width:88px;height:88px;transition:transform .3s ease;transform:scale(1)}.image-card-skeleton--active{transform:scale(1.27);opacity:1}.hk-c-progress__inner-sc{background:linear-gradient(135deg,hsla(0,0%,100%,.2) 25%,transparent 0,transparent 50%,hsla(0,0%,100%,.2) 0,hsla(0,0%,100%,.2) 75%,transparent 0,transparent 0),#4f46e5;position:absolute;left:0;top:0;height:100%;background-size:50px 50px;transition:width .3s ease-out;animation:hk-progress-move 3s linear both infinite}.hk-c-progress__inner-sc.indeterminate{width:100%;background:linear-gradient(135deg,hsla(0,0%,100%,.2) 25%,transparent 0,transparent 50%,hsla(0,0%,100%,.2) 0,hsla(0,0%,100%,.2) 75%,transparent 0,transparent 0),#4f46e5;position:absolute;left:0;top:0;height:100%;background-size:50px 50px;animation:indeterminate 1s infinite linear;transform-origin:0% 50%}@keyframes hk-progress-move{0%{background-position:0 0}to{background-position:100px 0}}@keyframes indeterminate{0%{transform:translate(0) scaleX(0)}40%{transform:translate(0) scaleX(.4)}to{transform:translate(100%) scaleX(.5)}}.hk-taost-bg-gradient{background:linear-gradient(0deg,#fff,#fff9 135.31%)}.hk-ext-animated{animation-duration:.3s;animation-timing-function:ease-out;animation-fill-mode:both}.hk-ext-slideInDown{animation-name:hk-ext-slideInDown}.hk-ext-slideInUp{animation-name:hk-ext-slideInUp}@keyframes hk-ext-slideInDown{0%{transform:translateY(-100%);visibility:visible}to{transform:translateY(0)}}@keyframes hk-ext-slideInUp{0%{transform:translateY(0)}to{transform:translateY(-100%);visibility:visible}}.placeholder\:text-slate-500::-moz-placeholder{--tw-text-opacity: 1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.placeholder\:text-slate-500::placeholder{--tw-text-opacity: 1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.placeholder\:text-slate-600::-moz-placeholder{--tw-text-opacity: 1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.placeholder\:text-slate-600::placeholder{--tw-text-opacity: 1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.last\:border-b-0:last-child{border-bottom-width:0px}.hover\:rounded-lg:hover{border-radius:8px}.hover\:border-indigo-600:hover{--tw-border-opacity: 1;border-color:rgb(79 70 229 / var(--tw-border-opacity, 1))}.hover\:border-indigo-800:hover{--tw-border-opacity: 1;border-color:rgb(55 48 163 / var(--tw-border-opacity, 1))}.hover\:bg-indigo-100:hover{--tw-bg-opacity: 1;background-color:rgb(224 231 255 / var(--tw-bg-opacity, 1))}.hover\:bg-indigo-50:hover{--tw-bg-opacity: 1;background-color:rgb(238 242 255 / var(--tw-bg-opacity, 1))}.hover\:bg-indigo-600:hover{--tw-bg-opacity: 1;background-color:rgb(79 70 229 / var(--tw-bg-opacity, 1))}.hover\:bg-indigo-700:hover{--tw-bg-opacity: 1;background-color:rgb(67 56 202 / var(--tw-bg-opacity, 1))}.hover\:bg-indigo-800:hover{--tw-bg-opacity: 1;background-color:rgb(55 48 163 / var(--tw-bg-opacity, 1))}.hover\:bg-indigo-950:hover{--tw-bg-opacity: 1;background-color:rgb(30 27 75 / var(--tw-bg-opacity, 1))}.hover\:bg-orange-600:hover{--tw-bg-opacity: 1;background-color:rgb(234 88 12 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-100:hover{--tw-bg-opacity: 1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-50:hover{--tw-bg-opacity: 1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.hover\:text-black:hover{--tw-text-opacity: 1;color:rgb(0 0 0 / var(--tw-text-opacity, 1))}.hover\:text-indigo-600:hover{--tw-text-opacity: 1;color:rgb(79 70 229 / var(--tw-text-opacity, 1))}.hover\:text-indigo-800:hover{--tw-text-opacity: 1;color:rgb(55 48 163 / var(--tw-text-opacity, 1))}.hover\:text-slate-600:hover{--tw-text-opacity: 1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.hover\:text-slate-800:hover{--tw-text-opacity: 1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:outline-none:hover{outline:2px solid transparent;outline-offset:2px}.focus\:border-indigo-600:focus{--tw-border-opacity: 1;border-color:rgb(79 70 229 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-0:focus{--tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow, 0 0 #0000)}.disabled\:cursor-none:disabled{cursor:none}.disabled\:cursor-not-allowed:disabled{cursor:not-allowed}.disabled\:opacity-40:disabled{opacity:.4}.disabled\:opacity-50:disabled{opacity:.5}.disabled\:opacity-60:disabled{opacity:.6}.group:hover .group-hover\:block{display:block}.group:hover .group-hover\:flex{display:flex}.group:hover .group-hover\:hidden{display:none}.peer:checked~.peer-checked\:right-5{right:20px}.peer:checked~.peer-checked\:translate-x-\[24px\]{--tw-translate-x: 24px;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.peer:checked~.peer-checked\:bg-green-600{--tw-bg-opacity: 1;background-color:rgb(22 163 74 / var(--tw-bg-opacity, 1))}@media (min-width: 640px){.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width: 768px){.md\:bottom-1\/2{bottom:50%}.md\:max-h-\[90dvh\]{max-height:90dvh}.md\:max-w-\[90vw\]{max-width:90vw}.md\:translate-y-1\/2{--tw-translate-y: 50%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\:rounded-xl{border-radius:12px}.md\:rounded-b-xl{border-bottom-right-radius:12px;border-bottom-left-radius:12px}}@media (min-width: 1024px){.lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}.\[\&\>a\]\:font-medium>a{font-weight:500}.\[\&\>a\]\:underline>a{text-decoration-line:underline}.\[\&\>a\]\:decoration-dashed>a{text-decoration-style:dashed}.\[\&\>a\]\:underline-offset-2>a{text-underline-offset:2px}</style><!----> <!----> <!----> <!----> <!----><!----> <!----><!----><!----></main></template></div></body></html>
