@@ -25,7 +25,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     /* padding: 20px; */
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 10px;
     /* width: 80%; Modal width */
     width: 60%;
@@ -60,9 +60,10 @@
 
 /* Style the modal body to handle scrolling */
 .modal-body {
-    max-height: 500px;
+    max-height: 400px;
     overflow: auto;
     padding: 0 20px;
+    /* background-color: #141b5f; */
 }
 
 .modal-body b{
@@ -91,7 +92,8 @@
     border-top: 2px solid #dee2e6;
     display: flex;
     justify-content: flex-end;
-    height: 60px;
+    min-height: 60px;
+    height: auto;
 
 }
 
@@ -185,7 +187,7 @@
 
 .modal-body {
 
-    /* input[type="text"],
+    input[type="text"],
     input[type="number"],
     input[type="email"],
     input[type="date"],
@@ -200,7 +202,7 @@
         color: #333;
         box-sizing: border-box;
         transition: border-color 0.3s ease;
-    } */
+    }
 
     textarea .pro-summary-textarea {
         width: 100%;
@@ -215,7 +217,7 @@
         transition: border-color 0.3s ease;
     }
 
-    /* input[type="text"]:focus,
+    input[type="text"]:focus,
     input[type="email"]:focus,
     input[type="date"]:focus,
     input[type="month"]:focus,
@@ -223,7 +225,7 @@
     select:focus {
         border-color: #5c6bc0;
         outline: none;
-    } */
+    }
 
     /* input[type="text"]::placeholder,
     input[type="email"]::placeholder,
@@ -240,15 +242,13 @@
         padding: 9px;
     }
 
-    select {
-        /* height: 40px; */
-    }
+    
 
-    /* div label {
+    div label {
         display: inline-block;
         margin-right: 20px;
 
-    } */
+    }
 
     input[type="radio"] {
         margin: 0 5px 0 20px;
